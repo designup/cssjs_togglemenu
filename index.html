@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        html,body{margin: 0; padding: 0; background: url(https://cdn.pixabay.com/photo/2016/10/20/18/35/earth-1756274_960_720.jpg); background-size:cover; }
+        .nav-menu-bars,
+        .nav-menu-bars::before,
+        .nav-menu-bars::after{
+            cursor: pointer;
+            border-radius: 1px;
+            height: 2px;
+            width: 25px;
+            background: #fff;
+            position: absolute;
+            left:0;
+            top:50%;
+            display: block;
+            transition: all 0.3s;
+        }
+        .nav-menu {
+            background-color: transparent;
+            height: 100%;
+            position: fixed;
+            width: 600px;
+            transform: translateX(-100%);
+            transition: transform 0.3s 0.3s;
+            
+        }
+        .nav-menu::before{
+            box-shadow: 0 8px 32px 0 rgba(23 23 23 / 38%);
+            border-radius: 10px;
+            background:rgb(255 255 255 / 10%);
+            backdrop-filter:blur(4px);
+        }
+    https://youtu.be/0zJCMNluW4c?t=247
+       
+    </style>
+    <nav class="nav-menu">
+    <div class="nav-menu-toggle js-toggle">
+        <span class="nav-menu-bars"></span>
+    </div>
+          
+    <ul class="menu-list">
+        <li class="menu-list-item">home</li>
+        <li class="menu-list-item">Gallery</li>
+        <li class="menu-list-item">About</li>
+        <li class="menu-list-item">Notice</li>
+        <li class="menu-list-item">Contact</li>
+    </ul>
+        
+   </nav>
+    
+</body>
+</html>
